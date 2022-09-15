@@ -1,0 +1,65 @@
+body{
+    background-color: rgb(211, 211, 211);
+}
+h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    font-weight: bold;
+}
+h3{
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 100px;
+}
+h3.b{
+    font-family: 'Courier New', Courier, monospace;
+}
+#body-text{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 90px;
+}
+dt{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 15px;
+    font-size: 14px;
+}
+#lunch{
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+#dinner{
+    float: left;
+    width: 28.5%;
+    text-align: center;
+}
+#snacks{
+    float: left;
+    width: 28.5%;
+    text-align: center;
+}
+#icon-text{
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+#icons-header{
+    float: left;
+}
+#test-center{
+    text-align: center;
+}
+#float{
+    float: left;
+    width: 38%;
+}
+#float-kontaktinfo{
+    float: left;
+    position: absolute;
+    padding-left: 725px;
+}
+#float-adress{
+    float: left;
+    position: absolute;
+    padding-left: 1250px;
+}
