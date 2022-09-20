@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body{
     background-color: rgb(211, 211, 211);
 }
@@ -23,21 +26,7 @@ dt{
     padding-left: 15px;
     font-size: 14px;
 }
-#lunch{
-    float: left;
-    width: 33%;
-    text-align: center;
-}
-#dinner{
-    float: left;
-    width: 28.5%;
-    text-align: center;
-}
-#snacks{
-    float: left;
-    width: 28.5%;
-    text-align: center;
-}
+
 #icon-text{
     float: left;
     width: 33%;
@@ -46,20 +35,28 @@ dt{
 #icons-header{
     float: left;
 }
-#test-center{
+
+
+[class*="col-"] {
+    width: 100%;
+}
+
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
     text-align: center;
 }
-#float{
-    float: left;
-    width: 38%;
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
-#float-kontaktinfo{
-    float: left;
-    position: absolute;
-    padding-left: 725px;
-}
-#float-adress{
-    float: left;
-    position: absolute;
-    padding-left: 1250px;
-}
+
+@media only screen and (min-width: 1200px) {
+    /*For desktop view*/
+    .col-1{width: 33.333%;}
+    .col-2{width: 33.333%;}
+    .col-3{width: 33.333%;}
+  }
