@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 65 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-97.1971,-87.2471)">
+        <g id="Egg" transform="matrix(0.875,0,0,0.855615,101.223,16.6253)">
+            <rect x="-4.601" y="82.539" width="74.266" height="75.477" style="fill:none;"/>
+            <g transform="matrix(1.11392,0,0,0.957805,-130.209,71.2035)">
+                <g transform="matrix(1.19036,0,0,1.41575,78.3799,-14.4825)">
+                    <circle cx="56.589" cy="46.146" r="25.857" style="fill:rgb(0,226,255);stroke:black;stroke-width:2.59px;"/>
+                </g>
+                <g transform="matrix(1.02597,0,0,1.22024,83.2894,-5.28167)">
+                    <text x="43.759px" y="63.819px" style="font-family:'Cocogoose';font-size:48px;">E</text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
