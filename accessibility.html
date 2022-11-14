@@ -2,6 +2,8 @@
 <title>Java Junction Cafe</title>
 <html>
     <head>
+        <script src="functions.js"></script>
+        <meta charset="UTF-8">
         <meta lang="no">
         <meta name="viewport" content="width=device-width, initial scale=1.0">
         <link rel="stylesheet" href="styles.css">
@@ -9,25 +11,28 @@
     <body>
         <div class="topnav">
             <a href="index.html">Java Junction Cafe</a>
-            <div class="dropdown">
-                <button class="dropbtn"><img src="icons/nav-menu.svg" alt="navigation menu" width="20%">
-                </button>
-                <div class="dropdown-content">
-                  <a href="index.html">Hjem</a>
-                  <a href="booking.html">Book bord</a>
-                  <a href="meny.html">Vår meny</a>
-                  <a href="accessibility.html">Accessibility</a>
-                </div>
-              </div> 
+
+            <div class="burgermenu" onclick="openNav(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">Hjem</a>
+                <a href="booking.html">Book bord</a>
+                <a href="meny.html">Vår meny</a>
+                <a href="accessibility.html">Accessibility</a>
+            </div>
         </div>
 
         <div class="container">
-            <img class="main" src="img/pexels-Accessibility.jpg" alt="Bilde av en person som koder" >
+            <img class="main" src="img/pexels-Accessibility.jpg" alt="Bilde av en person som koder">
             <div class="centered"><h1>Accessibility</h1></div>
         </div>    
 
         <div>
-            <h3>Hva gjør vår kode og design bra?</h3>
+            <h2>Hva gjør vår kode og design bra?</h2>
             <hr>
             <p>Skriv om design og kodevalg, igjen gjerne med bilder som kan vise til valgene vi har tatt.</p>
         </div>
@@ -37,15 +42,28 @@
         <div class="footer">
             <div class="row-1">
                 <div class="col-1">
-                    <a><h4>This is a test</h4></a>
+                    <a><h4>Kontakt oss</h4>
+                        <p style="font-size:12px;">Telefon: 67235000</p>
+                        <p style="font-size:12px;">E-post: post@javaj.no</p>
+                        <p style="font-size:12px;">Benytt vårt bookingskjema for bordbestilling</p>
+                    </a>
                 </div>
 
                 <div class="col-2">
-                    <a><h4>This is a test</h4></a>
+                    <a><h4>Nyhetsbrev</h4>
+                        <input type="text" id="navn" name="navn" value="Navn">
+                        <input type="text" id="epost" name="epost" value="E-post">
+                        <input type="submit" id="abonner" value="Abonner">
+                    </a>
                 </div>
                 
                 <div class="col-3">
-                    <a><h4>This is a test</h4></a>
+                    <a><h4>Åpningstider</h4>
+                        <p style="font-size:13px;"> Mandag-Lørdag</p>
+                        <p style="font-size:12px;">11:00-22:00</p>
+                        <p style="font-size:13px;">Søndag</p>
+                        <p style="font-size:12px;">13-22:00</p>
+                    </a>
                 </div>
             </div>
         </div>

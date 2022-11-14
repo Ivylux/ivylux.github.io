@@ -18,17 +18,91 @@
     src: url(fonts/Cocogoose/Cocogoose\ Pro\ Light-trial.ttf);
 }
 
+@font-face {
+    font-family: Cocogoose-numbers;
+    src: url(fonts/Cocogoose/Cocogoose\ Pro\ Semilight\ Italic-trial.ttf);
+}
+
+@font-face {
+    font-family: Coolvetica;
+    src: url(fonts/coolvetica/coolvetica\ rg.otf);
+}
+
 h1 {
     font-family: Cocogoose-title;
     font-style: italic;
-    font-size: 100pt;
+    font-size: 10vw;
+}
+
+h3 {
+    text-align: center;
+    font-family: Cocogoose-body
 }
 
 body {
     background-color: #333333;
     color: #FFFCFC;
-    font-family: Cocogoose-body;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+}
+
+.container_booking {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.skjema {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    height: 550px;
+    width: 400px;
+}
+
+#navn-form {
+    display: block;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    width: 200px;
+}
+
+#mobil-form {
+    display: block;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    width: 200px;
+}
+
+#E-post-form {
+    display: block;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    width: 200px;
+}
+
+#info-form {
+    display: block;
+    height: 100px;
+    width: 400px;
+}
+
+.send {
+    margin-top: 3%;
+}
+
+
+.infotekst {
+    margin: 0px;
+}
+
+.informasjon {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 400px;
 }
 
 li {
@@ -78,62 +152,87 @@ hr.hidden {
     font-size: 20pt;
 }
 
-.dropdown {
+.burgermenu {
     float: right;
-    overflow: hidden;
-}
-  
-.dropdown .dropbtn {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-  
-.dropdown:hover .dropbtn {
-    background-color: rgb(59, 59, 59);
-}
-  
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-  
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    font-family: Cocogoose-body;
-}
-  
-.dropdown-content a:hover {
-background-color: #ddd;
+    cursor: pointer;
+    padding-top: 1%;
+    padding-right: 2%;
 }
 
-.dropdown:hover .dropdown-content {
-display: block;
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #e8e8e8;
+    margin: 6px 0;
+    transition: 0.4s;
 }
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-family: Cocogoose-body;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 48px;
+    margin-left: 50px;
+  }
 
 .footer {
     overflow: hidden;
     background-color: #161616;
+
 }
 
 .footer a {
     text-align: center;
+    font-family: Cocogoose-numbers;
     color: #f2f2f2;
-    padding: 30px;
+    font-size: 15px;
+}
+
+input#abonner { 
+    height:25px; 
+    width:80px;
+}
+#abonner:hover{
+    background-color:#fbd19d;
+    border:1px solid #f2f2f2;
+    transition: 0.6s;
+}
+#navn{
+    height:25px; 
+    width:150px;
+}
+#epost{
+    height:25px; 
+    width:150px;
+
 }
 
 .location-links a:link {
@@ -162,3 +261,14 @@ display: block;
     .col-2{width: 33.333%;}
     .col-3{width: 33.333%;}
   }
+
+@media only screen and (max-width: 945px) {
+    .informasjon{
+    margin-bottom: 5%;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
