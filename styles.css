@@ -105,6 +105,10 @@ body {
     width: 400px;
 }
 
+ul {
+    list-style-type: none;
+}
+
 li {
     font-family: cocogoose-title;
 }
@@ -122,6 +126,10 @@ hr {
 hr.hidden {
     clear: both;
     visibility: hidden;
+}
+
+hr.long{
+    width: auto;
 }
 
 .container {
