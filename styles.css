@@ -56,10 +56,8 @@ body {
 
 .skjema {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     text-align: left;
-    height: 550px;
-    width: 400px;
 }
 
 #navn-form {
@@ -240,7 +238,6 @@ input#abonner {
 #epost{
     height:25px; 
     width:150px;
-
 }
 
 .location-links a:link {
@@ -279,4 +276,55 @@ input#abonner {
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 450px) {
+    #info-form {
+     width: 200px; 
+    }
+    .container_booking {
+        justify-content: left;
+    }
+}
+
+
+.container_topical{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 200px;
+}
+
+  .skjema-topical{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 400px;
+    line-height: 1.9;
+    padding-top: 1%;
+}
+
+.informasjon-topical{
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    height: 700px;
+}
+
+.informasjon-topical p {
+    font-size: 15px;
+}
+
+.informasjon-topical a:link {
+    color: lightsalmon;
+}
+.informasjon-topical a:visited {
+    color: lightsalmon;
+}
+
+.informasjon-topical figure img{
+    border: 2px;
+    border-radius: 5%;
+    box-shadow: gray 0px 0px 5px;
+
 }
