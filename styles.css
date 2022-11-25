@@ -140,6 +140,7 @@ hr.long{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding-bottom: 50px;
 }
 
 .topnav {
@@ -155,7 +156,7 @@ hr.long{
     padding: 14px 30px;
     text-decoration: none;
     font-family: Bauhaus93;
-    font-size: 20pt;
+    font-size: 2vw;
 }
 
 .burgermenu {
@@ -287,12 +288,14 @@ input#abonner {
     }
 }
 
-
 .container_topical{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 200px;
+    margin-bottom: 120px;
+    position: relative;
+    text-align: center;
+    color: #FFFCFC;
 }
 
   .skjema-topical{
@@ -307,8 +310,6 @@ input#abonner {
 .informasjon-topical{
     display: flex;
     flex-wrap: wrap;
-    width: 900px;
-    height: 700px;
 }
 
 .informasjon-topical p {
@@ -322,9 +323,20 @@ input#abonner {
     color: lightsalmon;
 }
 
+figure.detaljer img{
+    max-width: 700px;
+    height: auto;
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
+    float: left;
+}
+figure.detaljer figcaption{
+    font-style: italic;
+}
+
 .informasjon-topical figure img{
+    justify-content: left;
     border: 2px;
     border-radius: 5%;
     box-shadow: gray 0px 0px 5px;
-
 }
