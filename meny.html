@@ -9,136 +9,145 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div class="topnav">
-            <a href="index.html">Java Junction Cafe</a>
+        <header>
+            <div class="topnav">
+                <a href="index.html">Java Junction Cafe</a>
+                <a href="#main" class="contentskip">Hopp til innhold</a>
+                
+                <button type="button" class="burgermenu" onclick="openNav(this)" onfocus="openNav(this)">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </button>
 
-            <div class="burgermenu" onclick="openNav(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
+                <div id="mySidenav" class="sidenav">
+                    <button type="button" class="closebtn" onclick="closeNav()">&times;</button>
+                    <a href="index.html">Hjem</a>
+                    <a href="booking.html">Book bord</a>
+                    <a href="meny.html">Vår meny</a>
+                    <a href="accessibility.html">Tilgjengelighet</a>
+                    <a href="topical.html">Topic page</a>
+                    <button type="button" class="hiddenbtn" onclick="closeNav()" onblur="closeNav()" aria-label="lukk navigasjonsmenyen"></button>
+                </div>
             </div>
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="index.html">Hjem</a>
-                <a href="booking.html">Book bord</a>
-                <a href="meny.html">Vår meny</a>
-                <a href="accessibility.html">Accessibility</a>
-                <a href="topical.html">Topic page</a>
-            </div>
-        </div>
+        </header>
 
-        <div class="container">
-            <img class="main" src="img/pexels-Menu.jpg" alt="Bilde av mat på et bord" >
-            <div class="centered"><h1>Vår meny</h1></div>
-        </div>
-
-        <div class="row-1">
-            <h3>Ikoner for allergener</h3> 
-            <img src="icons/Allergener-samlet.svg" alt="Ikoner av allergener: Gluten, Egg, Melk og Nøtter" width="15%">
-        </div>
-
-        <div class="row-2">
-            <div class="col-1">
-                <h2>Lunsj</h2>
-                <hr class="long">
-                <ul>
-                    <li>Foccacia med kylling og kurrysalat - 185kr</li>
-                    <dt>Smørbrød med kylling og kurrysalat, serveres på hjemmelaget focacciabrød</dt>
-                    <dt><img src="icons/Egg.svg" width="25" alt="Allergen egg"><img src="icons/Gluten.svg" width="25" alt="Allergen gluten"></dt>
-                    
-                    <hr>
-
-                    <li>Gresk salat med rømmedressing - 219kr</li>
-                    <dt>Klassisk gresk salat med oliven, agurk, rødløk, fetaost, paprika og tomat. </dt>
-                    <dt><img src="icons/Melk.svg" width="25" alt="Allergen melk"><img src="icons/Gluten.svg" width="25" alt="Allergen gluten"></dt>
-                    
-                    <hr>
-
-                    <li>Karbonadesmørbrød med remulade - 185kr</li>
-                    <dt>Klassisk karbonadesmørbrød med remulade og stekt løk. Serveres på hjemmelaget surdeigsbrød</dt>
-                    <dt><img src="icons/Egg.svg" width="25" alt="Allergen egg"><img src="icons/Gluten.svg" width="25" alt="Allergen gluten"></dt>
-
-                    <hr>
-                </ul>
+        <main id="main">
+            <div class="container">
+                <img class="main" src="img/pexels-Menu.jpg" alt="Bilde av mat på et bord" >
+                <div class="centered"><h1>Vår meny</h1></div>
             </div>
 
-            <div class="col-2">
-                <h2>Middag</h2>
-                <hr class="long">
-                <ul>
-                    <li>Kylling i ris med bretange saus - 160kr</li>
-                    <dt>Grillet kyllingfilet serveres med ris, bretangesaus og grønn salat.</dt>
-                    <dt><img src="icons/Melk.svg" width="25" alt="Allergen melk"></dt>
-    
-                    <hr>
-
-                    <li>Tikka masala - 230kr</li>
-                    <dt>Tikka Massala med kylling i klassisk tikka massala saus. Serveres med ris </dt>
-                    <dt><img src="icons/Melk.svg" width="25" alt="Allergen melk"><img src="icons/Nøtter.svg" width="25" alt="Allergen nøtter"></dt>
-                    
-                    <hr>
-
-                    <li>Kyllingwok med cashew - 175kr</li>
-                    <dt>Woket kylling og grønsaker serveres med eggnudler, woksaus og hakkede cashewnøtter på toppen.</dt>
-                    <dt><img src="icons/Egg.svg" width="25" alt="Allergen egg"><img src="icons/Nøtter.svg" width="25" alt="Allergen nøtter"></dt>
-
-                    <hr>
-                </ul>
-            </div>
-
-            <div class="col-3">
-                <h2>Dessert</h2>
-                <hr class="long">
-                <ul>
-                    <li>Brownie - 50kr</li>
-                    <dt>Hjemmelaget lun brownie serveres med vaniljeis</dt>
-                    <dt><img src="icons/Melk.svg" width="25" alt="Allergen melk"><img src="icons/Gluten.svg" width="25" alt="Allergen gluten"></dt>
-    
-                    <hr>
-
-                    <li>Eplekake - 45kr</li>
-                    <dt>Lun eplekake serveres med vaniljeis</dt>
-                    <dt><img src="icons/Melk.svg" width="25" alt="Allergen melk"><img src="icons/Nøtter.svg" width="25" alt="Allergen nøtter"></dt>
-                    
-                    <hr>
-
-                    <li>Kanelbolle - 40kr</li>
-                    <dt>Fersk hjemmelaget kanelbolle med glasur</dt>
-                    <dt><img src="icons/Gluten.svg" width="25" alt="Allergen gluten"></dt>
-
-                    <hr>
-            </div>
-        </div>
-        
-        <hr class="hidden">
-
-        <div class="footer">
             <div class="row-1">
+                <h3>Ikoner for allergener</h3> 
+                <img src="icons/Allergener-samlet.svg" alt="Ikoner av allergener: Gluten, Egg, Melk og Nøtter" width="15%">
+            </div>
+
+            <div class="row-2">
                 <div class="col-1">
-                    <a><h4>Kontakt oss</h4>
-                        <p style="font-size:12px;">Telefon: 67235000</p>
-                        <p style="font-size:12px;">E-post: post@javaj.no</p>
-                        <p style="font-size:12px;">Benytt vårt bookingskjema for bordbestilling</p>
-                    </a>
+                    <h2>Lunsj</h2>
+                    <hr class="long">
+                    <ul>
+                        <li>Foccacia med kylling og kurrysalat - 185kr</li>
+                        <dt>Smørbrød med kylling og kurrysalat, serveres på hjemmelaget focacciabrød</dt>
+                        <dt><img src="icons/Egg.svg" width="25" alt="Allergen egg"><img src="icons/Gluten.svg" width="25" alt="Allergen gluten"></dt>
+                        
+                        <hr>
+
+                        <li>Gresk salat med rømmedressing - 219kr</li>
+                        <dt>Klassisk gresk salat med oliven, agurk, rødløk, fetaost, paprika og tomat. </dt>
+                        <dt><img src="icons/Melk.svg" width="25" alt="Allergen melk"><img src="icons/Gluten.svg" width="25" alt="Allergen gluten"></dt>
+                        
+                        <hr>
+
+                        <li>Karbonadesmørbrød med remulade - 185kr</li>
+                        <dt>Klassisk karbonadesmørbrød med remulade og stekt løk. Serveres på hjemmelaget surdeigsbrød</dt>
+                        <dt><img src="icons/Egg.svg" width="25" alt="Allergen egg"><img src="icons/Gluten.svg" width="25" alt="Allergen gluten"></dt>
+
+                        <hr>
+                    </ul>
                 </div>
 
                 <div class="col-2">
-                    <a><h4>Nyhetsbrev</h4></a>
-                        <input type="text" id="navn" name="navn" value="Navn">
-                        <input type="text" id="epost" name="epost" value="E-post">
-                        <input type="submit" id="abonner" value="Abonner">
-                    </a>
+                    <h2>Middag</h2>
+                    <hr class="long">
+                    <ul>
+                        <li>Kylling i ris med bretange saus - 160kr</li>
+                        <dt>Grillet kyllingfilet serveres med ris, bretangesaus og grønn salat.</dt>
+                        <dt><img src="icons/Melk.svg" width="25" alt="Allergen melk"></dt>
+        
+                        <hr>
+
+                        <li>Tikka masala - 230kr</li>
+                        <dt>Tikka Massala med kylling i klassisk tikka massala saus. Serveres med ris </dt>
+                        <dt><img src="icons/Melk.svg" width="25" alt="Allergen melk"><img src="icons/Nøtter.svg" width="25" alt="Allergen nøtter"></dt>
+                        
+                        <hr>
+
+                        <li>Kyllingwok med cashew - 175kr</li>
+                        <dt>Woket kylling og grønsaker serveres med eggnudler, woksaus og hakkede cashewnøtter på toppen.</dt>
+                        <dt><img src="icons/Egg.svg" width="25" alt="Allergen egg"><img src="icons/Nøtter.svg" width="25" alt="Allergen nøtter"></dt>
+
+                        <hr>
+                    </ul>
                 </div>
 
                 <div class="col-3">
-                    <a><h4>Åpningstider</h4>
-                        <p style="font-size:13px;"> Mandag-Lørdag</p>
-                        <p style="font-size:12px;">11:00-22:00</p>
-                        <p style="font-size:13px;">Søndag</p>
-                        <p style="font-size:12px;">13-22:00</p>
-                    </a>
+                    <h2>Dessert</h2>
+                    <hr class="long">
+                    <ul>
+                        <li>Brownie - 50kr</li>
+                        <dt>Hjemmelaget lun brownie serveres med vaniljeis</dt>
+                        <dt><img src="icons/Melk.svg" width="25" alt="Allergen melk"><img src="icons/Gluten.svg" width="25" alt="Allergen gluten"></dt>
+        
+                        <hr>
+
+                        <li>Eplekake - 45kr</li>
+                        <dt>Lun eplekake serveres med vaniljeis</dt>
+                        <dt><img src="icons/Melk.svg" width="25" alt="Allergen melk"><img src="icons/Nøtter.svg" width="25" alt="Allergen nøtter"></dt>
+                        
+                        <hr>
+
+                        <li>Kanelbolle - 40kr</li>
+                        <dt>Fersk hjemmelaget kanelbolle med glasur</dt>
+                        <dt><img src="icons/Gluten.svg" width="25" alt="Allergen gluten"></dt>
+
+                        <hr>
                 </div>
             </div>
-        </div>
+        </main>
+        
+        <hr class="hidden">
+
+        <footer>
+            <div class="footer">
+                <div class="row-1">
+                    <div class="col-1">
+                        <a><h4>Kontakt oss</h4>
+                            <p style="font-size:12px;">Telefon: 67235000</p>
+                            <p style="font-size:12px;">E-post: post@javaj.no</p>
+                            <p style="font-size:12px;">Benytt vårt bookingskjema for bordbestilling</p>
+                        </a>
+                    </div>
+
+                    <div class="col-2">
+                        <a><h4>Nyhetsbrev</h4></a>
+                            <input type="text" id="navn" name="navn" value="Navn">
+                            <input type="text" id="epost" name="epost" value="E-post">
+                            <input type="submit" id="abonner" value="Abonner">
+                        </a>
+                    </div>
+
+                    <div class="col-3">
+                        <a><h4>Åpningstider</h4>
+                            <p style="font-size:13px;"> Mandag-Lørdag</p>
+                            <p style="font-size:12px;">11:00-22:00</p>
+                            <p style="font-size:13px;">Søndag</p>
+                            <p style="font-size:12px;">13-22:00</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

@@ -9,97 +9,106 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div class="topnav">
-            <a href="index.html">Java Junction Cafe</a>
-
-            <div class="burgermenu" onclick="openNav(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="index.html">Hjem</a>
-                <a href="booking.html">Book bord</a>
-                <a href="meny.html">Vår meny</a>
-                <a href="accessibility.html">Accessibility</a>
-                <a href="topical.html">Topic page</a>
-            </div>
-        </div>
-
-        <div class="container">
-            <img class="main" src="img/pexels-Booking.jpg" alt="Bilde av en tom kafe" >
-            <div class="centered"><h1>Book bord</h1></div>
-        </div>
-
-        <div>
-            <h2>Hvorfor spise hos oss?</h2>
-            <hr>
-            <div class="container_booking">
-                    <div class="informasjon">
-                        <p class="infotekst" style="font-size:18px;">På vår lokasjon i Oslo har vi et chambre separee som passer perfekt for private sammenkomster eller firmaarrangementer. Vi har sitteplasser til 50 personer og mulighet for ståplasser til 75. Vi kan også tilby pynting av lokalet og forskjellig utstyr som prosjektor, mikrofon og musikkanlegg. Lokalet er lyst og åpent med et minimalistisk uttrykk som gjør det enkelt å pynte som dere selv ønsker. Passer perfekt til for eksempel konfirmasjon, 50-årslag, barnedåp eller kick-off med jobben. 
-                        <br>Ved booking av vårt selskapslokale kan vi tilby en buffet, en satt 3-retters meny med tilhørende vinpakke eller fingermat dersom dere ønsker å leie lokalet med ståplasser. 
-                        <br>Bruk skjema på denne siden for å sende en forespørsel om leie av vårt lokale!</p>
-                    </div>
+        <header>
+            <div class="topnav">
+                <a href="index.html">Java Junction Cafe</a>
+                <a href="#main" class="contentskip">Hopp til innhold</a>
                 
-      
-                <div class="skjema">
-                    <div class="form" id="form" type="form">
-                        <form action="submission.html" method="POST">
-                            <section class="navn-form">
-                                <label for="navn-form">Fullt navn</label>
-                                <input type="text" name="navn" id="navn-form">
-                            </section>
-                            <section class="mobil-form">
-                                <label for="mobil-form">Mobil</label>
-                                <input type="text" name="mobil" id="mobil-form">
-                            </section>
-                            <section class="E-post-form">
-                                <label for="E-post-form">E-post</label>
-                                <input type="text" name="E-post" id="E-post-form">
-                            </section>
-                            <section class="info-form">
-                                <label for="info-form">Ekstra info</label>
-                                <textarea id="info-form" name="info" rows="8" cols="15" placeholder="Informasjon om antall gjester, ønsket dato og klokkeslett og eventuelt hvilken meny dere ønsker."></textarea>
-                            </section>
-                            <section class="send">
-                                <input type="submit" value="Send">
-                            </section>                   
-                        </form>
+                <button type="button" class="burgermenu" onclick="openNav(this)" onfocus="openNav(this)">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </button>
+
+                <div id="mySidenav" class="sidenav">
+                    <button type="button" class="closebtn" onclick="closeNav()">&times;</button>
+                    <a href="index.html">Hjem</a>
+                    <a href="booking.html">Book bord</a>
+                    <a href="meny.html">Vår meny</a>
+                    <a href="accessibility.html">Tilgjengelighet</a>
+                    <a href="topical.html">Topic page</a>
+                    <button type="button" class="hiddenbtn" onclick="closeNav()" onblur="closeNav()" aria-label="lukk navigasjonsmenyen"></button>
+                </div>
+            </div>
+        </header>
+
+        <main id="main">
+            <div class="container">
+                <img class="main" src="img/pexels-Booking.jpg" alt="Bilde av en tom kafe" >
+                <div class="centered"><h1>Book bord</h1></div>
+            </div>
+
+            <div>
+                <h2>Hvorfor spise hos oss?</h2>
+                <hr>
+                <div class="container_booking">
+                        <div class="informasjon">
+                            <p class="infotekst" style="font-size:18px;">På vår lokasjon i Oslo har vi et chambre separee som passer perfekt for private sammenkomster eller firmaarrangementer. Vi har sitteplasser til 50 personer og mulighet for ståplasser til 75. Vi kan også tilby pynting av lokalet og forskjellig utstyr som prosjektor, mikrofon og musikkanlegg. Lokalet er lyst og åpent med et minimalistisk uttrykk som gjør det enkelt å pynte som dere selv ønsker. Passer perfekt til for eksempel konfirmasjon, 50-årslag, barnedåp eller kick-off med jobben. 
+                            <br>Ved booking av vårt selskapslokale kan vi tilby en buffet, en satt 3-retters meny med tilhørende vinpakke eller fingermat dersom dere ønsker å leie lokalet med ståplasser. 
+                            <br>Bruk skjema på denne siden for å sende en forespørsel om leie av vårt lokale!</p>
+                        </div>
+                    
+        
+                    <div class="skjema">
+                        <div class="form" id="form" type="form">
+                            <form action="submission.html" method="POST">
+                                <section class="navn-form">
+                                    <label for="navn-form">Fullt navn</label>
+                                    <input type="text" name="navn" id="navn-form">
+                                </section>
+                                <section class="mobil-form">
+                                    <label for="mobil-form">Mobil</label>
+                                    <input type="text" name="mobil" id="mobil-form">
+                                </section>
+                                <section class="E-post-form">
+                                    <label for="E-post-form">E-post</label>
+                                    <input type="text" name="E-post" id="E-post-form">
+                                </section>
+                                <section class="info-form">
+                                    <label for="info-form">Ekstra info</label>
+                                    <textarea id="info-form" name="info" rows="8" cols="15" placeholder="Informasjon om antall gjester, ønsket dato og klokkeslett og eventuelt hvilken meny dere ønsker."></textarea>
+                                </section>
+                                <section class="send">
+                                    <input type="submit" value="Send">
+                                </section>                   
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
 
         <hr class="hidden">
 
-        <div class="footer">
-            <div class="row-1">
-                <div class="col-1">
-                    <a><h4>Kontakt oss</h4>
-                        <p style="font-size:12px;">Telefon: 67235000</p>
-                        <p style="font-size:12px;">E-post: post@javaj.no</p>
-                        <p style="font-size:12px;">Benytt vårt bookingskjema for bordbestilling</p>
-                    </a>
-                </div>
+        <footer>
+            <div class="footer">
+                <div class="row-1">
+                    <div class="col-1">
+                        <a><h4>Kontakt oss</h4>
+                            <p style="font-size:12px;">Telefon: 67235000</p>
+                            <p style="font-size:12px;">E-post: post@javaj.no</p>
+                            <p style="font-size:12px;">Benytt vårt bookingskjema for bordbestilling</p>
+                        </a>
+                    </div>
 
-                <div class="col-2">
-                    <a><h4>Nyhetsbrev</h4>
-                        <input type="text" id="navn" name="navn" value="Navn">
-                        <input type="text" id="epost" name="epost" value="E-post">
-                        <input type="submit" id="abonner" value="Abonner">
-                    </a>
-                </div>
-                
-                <div class="col-3">
-                    <a><h4>Åpningstider</h4>
-                        <p style="font-size:13px;"> Mandag-Lørdag</p>
-                        <p style="font-size:12px;">11:00-22:00</p>
-                        <p style="font-size:13px;">Søndag</p>
-                        <p style="font-size:12px;">13-22:00</p>
-                    </a>
+                    <div class="col-2">
+                        <a><h4>Nyhetsbrev</h4>
+                            <input type="text" id="navn" name="navn" value="Navn">
+                            <input type="text" id="epost" name="epost" value="E-post">
+                            <input type="submit" id="abonner" value="Abonner">
+                        </a>
+                    </div>
+                    
+                    <div class="col-3">
+                        <a><h4>Åpningstider</h4>
+                            <p style="font-size:13px;"> Mandag-Lørdag</p>
+                            <p style="font-size:12px;">11:00-22:00</p>
+                            <p style="font-size:13px;">Søndag</p>
+                            <p style="font-size:12px;">13-22:00</p>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </footer>
     </body>
 </html>

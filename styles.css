@@ -118,6 +118,7 @@ img.main {
     mask-image: linear-gradient(black, transparent);
 }
 
+/*Most <hr> tags will be 80%, but for special cases there is a hidden and long class*/
 hr {
     width: 80%;
 }
@@ -125,7 +126,6 @@ hr.hidden {
     clear: both;
     visibility: hidden;
 }
-
 hr.long{
     width: auto;
 }
@@ -147,7 +147,6 @@ hr.long{
     overflow: hidden;
     background-color: #161616;
 }
-
 .topnav a {
     float: left;
     display: block;
@@ -158,23 +157,31 @@ hr.long{
     font-family: Bauhaus93;
     font-size: 2vw;
 }
-
+.topnav .contentskip {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: transparent;
+}
+.topnav .contentskip:focus{
+    color: #e8e8e8;
+}
+.topnav button {
+    background-color: transparent;
+    border: none;
+}
 .burgermenu {
     float: right;
     cursor: pointer;
     padding-top: 1%;
     padding-right: 2%;
 }
-
-.bar1, .bar2, .bar3 {
+.bar{
     width: 35px;
     height: 5px;
     background-color: #e8e8e8;
     margin: 6px 0;
     transition: 0.4s;
 }
-
-
 .sidenav {
     height: 100%;
     width: 0;
@@ -186,8 +193,7 @@ hr.long{
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
-  }
-
+}
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -196,33 +202,36 @@ hr.long{
     color: #818181;
     display: block;
     transition: 0.3s;
+    white-space: nowrap;
 }
-
 .sidenav a:hover {
     color: #f1f1f1;
 }
-
 .sidenav .closebtn {
     position: absolute;
-    top: 0;
-    right: 25px;
+    color: #e8e8e8;
+    cursor: pointer;
+    top: 1.75%;
+    right: 16%;
     font-size: 48px;
     margin-left: 50px;
-  }
+}
+.sidenav .hiddenbtn:focus {
+    visibility: hidden;
+}
 
+/*Footer, input, navn and epost make up the footer and newsletter subscription sections*/
 .footer {
     overflow: hidden;
     background-color: #161616;
 
 }
-
 .footer a {
     text-align: center;
     font-family: Cocogoose-numbers;
     color: #f2f2f2;
     font-size: 15px;
 }
-
 input#abonner { 
     height:25px; 
     width:80px;
@@ -298,7 +307,7 @@ input#abonner {
     color: #FFFCFC;
 }
 
-  .skjema-topical{
+.skjema-topical{
     display: flex;
     flex-wrap: wrap;
     text-align: left;

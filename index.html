@@ -9,76 +9,85 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div class="topnav">
-            <a href="index.html">Java Junction Cafe</a>
-            
-            <div class="burgermenu" onclick="openNav(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="index.html">Hjem</a>
-                <a href="booking.html">Book bord</a>
-                <a href="meny.html">Vår meny</a>
-                <a href="accessibility.html">Accessibility</a>
-                <a href="topical.html">Topic page</a>
-            </div>
-        </div>
-
-        <div class="container">
-            <img class="main" src="img/pexels-Welcome.jpg" alt="Bilde av en tom kafe">
-            <div class="centered"><h1>Velkommen</h1></div>
-        </div>
-
-        <div>
-            <h2>Våre lokaler</h2>
-            <hr/>
-            <div class="location-links">
-                <div class="col-1">
-                    <a href="https://goo.gl/maps/7cau7P8cAjeMYVFaA" target="_blank"><img src="icons/house.svg" alt="hus ikon" width="15%"><p>OsloMet Kjeller</p></a>
-                </div>
-
-                <div class="col-2">
-                    <a href="https://goo.gl/maps/DGA3i7vWUU99tULK6" target="_blank"><img src="icons/house.svg" alt="hus ikon" width="15%"><p>OsloMet Pilestredet Studenthus</p></a>
-                </div>
-
-                <div class="col-3">
-                    <a href="https://goo.gl/maps/SZTLq4aAjs7nnS4CA" target="_blank"><img src="icons/house.svg" alt="hus ikon" width="15%"><p>UiO Chateau Neuf</p></a>
-                </div>
-            </div>
-            <hr class="hidden">
-        </div>
-        
-        <div class="footer">
-            <div class="row-1">
-                <div class="col-1">
-                    <a><h4>Kontakt oss</h4>
-                        <p style="font-size:12px;">Telefon: 67235000</p>
-                        <p style="font-size:12px;">E-post: post@javaj.no</p>
-                        <p style="font-size:12px;">Benytt vårt bookingskjema for bordbestilling</p>
-                    </a>
-                </div>
-
-                <div class="col-2">
-                    <a><h4>Nyhetsbrev</h4>
-                        <input type="text" id="navn" name="navn" value="Navn">
-                        <input type="text" id="epost" name="epost" value="E-post">
-                        <input type="submit" id="abonner" value="Abonner">
-                    </a>
-                    
-                </div>
+        <header>
+            <div class="topnav">
+                <a href="index.html">Java Junction Cafe</a>
+                <a href="#main" class="contentskip">Hopp til innhold</a>
                 
-                <div class="col-3">
-                    <a><h4>Åpningstider</h4>
-                        <p style="font-size:13px;"> Mandag-Lørdag</p>
-                        <p style="font-size:12px;">11:00-22:00</p>
-                        <p style="font-size:13px;">Søndag</p>
-                        <p style="font-size:12px;">13-22:00</p>
-                    </a>
+                <button type="button" class="burgermenu" onclick="openNav(this)" onfocus="openNav(this)">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </button>
+
+                <div id="mySidenav" class="sidenav">
+                    <button type="button" class="closebtn" onclick="closeNav()">&times;</button>
+                    <a href="index.html">Hjem</a>
+                    <a href="booking.html">Book bord</a>
+                    <a href="meny.html">Vår meny</a>
+                    <a href="accessibility.html">Tilgjengelighet</a>
+                    <a href="topical.html">Topic page</a>
+                    <button type="button" class="hiddenbtn" onclick="closeNav()" onblur="closeNav()" aria-label="lukk navigasjonsmenyen"></button>
                 </div>
             </div>
-        </div>
+        </header>
+
+        <main id="main">
+            <div class="container">
+                <img class="main" src="img/pexels-Welcome.jpg" alt="Bilde av en tom kafe">
+                <div class="centered"><h1>Velkommen</h1></div>
+            </div>
+
+            <div>
+                <h2>Våre lokaler</h2>
+                <hr/>
+                <div class="location-links">
+                    <div class="col-1">
+                        <a href="https://goo.gl/maps/7cau7P8cAjeMYVFaA" target="_blank"><img src="icons/house.svg" alt="hus ikon" width="15%"><p>OsloMet Kjeller</p></a>
+                    </div>
+
+                    <div class="col-2">
+                        <a href="https://goo.gl/maps/DGA3i7vWUU99tULK6" target="_blank"><img src="icons/house.svg" alt="hus ikon" width="15%"><p>OsloMet Pilestredet Studenthus</p></a>
+                    </div>
+
+                    <div class="col-3">
+                        <a href="https://goo.gl/maps/SZTLq4aAjs7nnS4CA" target="_blank"><img src="icons/house.svg" alt="hus ikon" width="15%"><p>UiO Chateau Neuf</p></a>
+                    </div>
+                </div>
+                <hr class="hidden">
+            </div>
+        </main>
+        
+        <footer>
+            <div class="footer">
+                <div class="row-1">
+                    <div class="col-1">
+                        <a><h4>Kontakt oss</h4>
+                            <p style="font-size:12px;">Telefon: 67235000</p>
+                            <p style="font-size:12px;">E-post: post@javaj.no</p>
+                            <p style="font-size:12px;">Benytt vårt bookingskjema for bordbestilling</p>
+                        </a>
+                    </div>
+
+                    <div class="col-2">
+                        <a><h4>Nyhetsbrev</h4>
+                            <input type="text" id="navn" name="navn" value="Navn">
+                            <input type="text" id="epost" name="epost" value="E-post">
+                            <input type="submit" id="abonner" value="Abonner">
+                        </a>
+                        
+                    </div>
+                    
+                    <div class="col-3">
+                        <a><h4>Åpningstider</h4>
+                            <p style="font-size:13px;"> Mandag-Lørdag</p>
+                            <p style="font-size:12px;">11:00-22:00</p>
+                            <p style="font-size:13px;">Søndag</p>
+                            <p style="font-size:12px;">13-22:00</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
