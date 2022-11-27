@@ -105,11 +105,23 @@ body {
 
 ul {
     list-style-type: none;
+    padding-inline-start:0;
 }
-
 li {
     font-family: cocogoose-title;
 }
+
+.allergenes-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    column-gap: 1rem;
+}
+.allergenes-grid img {
+    width: 10vw;
+    margin: auto;
+}
+
 
 img.main {
     max-width: 100%;
@@ -280,6 +292,12 @@ input#abonner {
 @media only screen and (max-width: 945px) {
     .informasjon{
     margin-bottom: 5%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .allergenes-grid img{
+        width: 5vw;
     }
 }
 
