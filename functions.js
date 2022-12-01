@@ -1,4 +1,4 @@
-//These functions are needed to create the navigation menu that slides in from the right
+//These functions are needed to let the navigation menu slide in from the right
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
 }

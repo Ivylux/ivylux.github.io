@@ -28,6 +28,7 @@
     src: url(fonts/coolvetica/coolvetica\ rg.otf);
 }
 
+/*We wanted a common theme for the entire website and decided to designate h1, h2 and body as seen below to keep our theme*/
 h1 {
     font-family: Cocogoose-title;
     font-style: italic;
@@ -46,6 +47,7 @@ body {
     text-align: center;
 }
 
+/*The booking and form elements as well as .send, .infotekst and .informasjon make up our form in the booking.html file*/
 .container_booking {
     display: flex;
     justify-content: center;
@@ -53,49 +55,40 @@ body {
     margin: 40px 20px;
     flex-wrap: wrap;
 }
-
 .skjema {
     display: flex;
     justify-content: right;
     text-align: left;
 }
-
 #navn-form {
     display: block;
     margin-top: 1%;
     margin-bottom: 2%;
     width: 200px;
 }
-
 #mobil-form {
     display: block;
     margin-top: 1%;
     margin-bottom: 2%;
     width: 200px;
 }
-
 #E-post-form {
     display: block;
     margin-top: 1%;
     margin-bottom: 2%;
     width: 200px;
 }
-
 #info-form {
     display: block;
     height: 100px;
     width: 400px;
 }
-
 .send {
     margin-top: 3%;
 }
-
-
 .infotekst {
     margin: 0px;
 }
-
 .informasjon {
     display: flex;
     flex-wrap: wrap;
@@ -103,6 +96,7 @@ body {
     width: 400px;
 }
 
+/*ul, li and allergenes-grid are used to make up our food menu page many.html*/
 ul {
     list-style-type: none;
     padding-inline-start:0;
@@ -110,7 +104,6 @@ ul {
 li {
     font-family: cocogoose-title;
 }
-
 .allergenes-grid {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -120,14 +113,6 @@ li {
 .allergenes-grid img {
     width: 10vw;
     margin: auto;
-}
-
-
-img.main {
-    max-width: 100%;
-    height: auto;
-    -webkit-mask-image: linear-gradient(black, transparent);
-    mask-image: linear-gradient(black, transparent);
 }
 
 /*Most <hr> tags will be 80%, but for special cases there is a hidden and long class*/
@@ -142,6 +127,7 @@ hr.long{
     width: auto;
 }
 
+/*container and centered is mostly used to make our text on the first photos on every page. Their functionality is related to img.main*/
 .container {
     position: relative;
     text-align: center;
@@ -154,7 +140,14 @@ hr.long{
     transform: translate(-50%, -50%);
     padding-bottom: 50px;
 }
+img.main {
+    max-width: 100%;
+    height: auto;
+    -webkit-mask-image: linear-gradient(black, transparent);
+    mask-image: linear-gradient(black, transparent);
+}
 
+/*topnav, burgermenu, bar and sidenav, make up the navigation menu and header*/
 .topnav {
     overflow: hidden;
     background-color: #161616;
@@ -262,6 +255,7 @@ input#abonner {
     width:150px;
 }
 
+/*Location links are the hyperlinks to gogle maps in index.html*/
 .location-links a:link {
     color: lightsalmon;
 }
@@ -269,36 +263,31 @@ input#abonner {
     color: lightsalmon;
 }
 
+/*"col" and "row" elements make up our solution to responsive web design*/
 [class*="col-"] {
     width: 100%;
     float: left;
     padding: 15px;
     text-align: center;
 }
-
 .row::after {
     content: "";
     clear: both;
     display: table;
 }
 
+/*The @media elements is the main responsive design choice where it choses visual elements based on screen size*/
 @media only screen and (min-width: 1200px) {
     /*For desktop view*/
     .col-1{width: 33.333%;}
     .col-2{width: 33.333%;}
     .col-3{width: 33.333%;}
+
+    .allergenes-grid img{width: 5vw;}
   }
 
 @media only screen and (max-width: 945px) {
-    .informasjon{
-    margin-bottom: 5%;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .allergenes-grid img{
-        width: 5vw;
-    }
+    .informasjon{margin-bottom: 5%;}
 }
 
 @media screen and (max-height: 450px) {
@@ -307,14 +296,12 @@ input#abonner {
 }
 
 @media screen and (max-width: 450px) {
-    #info-form {
-     width: 200px; 
-    }
-    .container_booking {
-        justify-content: left;
-    }
+    #info-form {width: 200px;}
+    .container_booking {justify-content: left;}
 }
 
+/*The topical classes below make up most of the css used in topical.html 
+Figure and figcaption was also mostly used in the same file and is therefore in this bulk of code*/
 .container_topical{
     display: flex;
     justify-content: center;
@@ -324,7 +311,6 @@ input#abonner {
     text-align: center;
     color: #FFFCFC;
 }
-
 .skjema-topical{
     display: flex;
     flex-wrap: wrap;
@@ -333,12 +319,10 @@ input#abonner {
     line-height: 1.9;
     padding-top: 1%;
 }
-
 .informasjon-topical{
     display: flex;
     flex-wrap: wrap;
 }
-
 .informasjon-topical p {
     font-size: 15px;
 }
@@ -349,7 +333,6 @@ input#abonner {
 .informasjon-topical a:visited {
     color: lightsalmon;
 }
-
 figure.detaljer img{
     max-width: 700px;
     height: auto;
@@ -360,10 +343,47 @@ figure.detaljer img{
 figure.detaljer figcaption{
     font-style: italic;
 }
-
 .informasjon-topical figure img{
     justify-content: left;
     border: 2px;
     border-radius: 5%;
     box-shadow: gray 0px 0px 5px;
+}
+
+/**/
+.accessibility-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+    position: relative;
+    text-align: center;
+    color: #FFFCFC;
+}
+.informasjon-accessibility {
+    display: flex;
+    flex-wrap: wrap;
+}
+.informasjon-accessibility p {
+    font-size: 15px;
+}
+.informasjon-accessibility a:link {
+    color: lightsalmon;
+}
+.informasjon-accessibility a:visited {
+    color: lightsalmon;
+}
+.informasjon-accessibility figure img{
+    justify-content: left;
+    border: 2px;
+    border-radius: 5%;
+    box-shadow: gray 0px 0px 5px;
+}
+.skjema-accessibility{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 400px;
+    line-height: 1.9;
+    padding-top: 1%;
 }
