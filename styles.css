@@ -300,39 +300,7 @@ input#abonner {
     .container_booking {justify-content: left;}
 }
 
-/*The topical classes below make up most of the css used in topical.html 
-Figure and figcaption was also mostly used in the same file and is therefore in this bulk of code*/
-.container_topical{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 120px;
-    position: relative;
-    text-align: center;
-    color: #FFFCFC;
-}
-.skjema-topical{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: left;
-    width: 400px;
-    line-height: 1.9;
-    padding-top: 1%;
-}
-.informasjon-topical{
-    display: flex;
-    flex-wrap: wrap;
-}
-.informasjon-topical p {
-    font-size: 15px;
-}
-
-.informasjon-topical a:link {
-    color: lightsalmon;
-}
-.informasjon-topical a:visited {
-    color: lightsalmon;
-}
+/*This is a general class for figure elements. It's used to make articles and the like*/
 figure.detaljer img{
     max-width: 700px;
     height: auto;
@@ -343,15 +311,9 @@ figure.detaljer img{
 figure.detaljer figcaption{
     font-style: italic;
 }
-.informasjon-topical figure img{
-    justify-content: left;
-    border: 2px;
-    border-radius: 5%;
-    box-shadow: gray 0px 0px 5px;
-}
 
-/**/
-.accessibility-content {
+/*These content classes are used to structure photos and text next to one another on a page*/
+.content-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -360,26 +322,26 @@ figure.detaljer figcaption{
     text-align: center;
     color: #FFFCFC;
 }
-.informasjon-accessibility {
-    display: flex;
-    flex-wrap: wrap;
+.information-content p {
+    font-size: 16px;
 }
-.informasjon-accessibility p {
-    font-size: 15px;
+.information-content h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
 }
-.informasjon-accessibility a:link {
+.information-content a:link {
     color: lightsalmon;
 }
-.informasjon-accessibility a:visited {
+.information-content a:visited {
     color: lightsalmon;
 }
-.informasjon-accessibility figure img{
+.information-content figure img{
     justify-content: left;
     border: 2px;
     border-radius: 5%;
     box-shadow: gray 0px 0px 5px;
 }
-.skjema-accessibility{
+.content-text-container{
     display: flex;
     flex-wrap: wrap;
     text-align: left;
