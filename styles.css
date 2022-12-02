@@ -300,18 +300,6 @@ input#abonner {
     .container_booking {justify-content: left;}
 }
 
-/*This is a general class for figure elements. It's used to make articles and the like*/
-figure.detaljer img{
-    max-width: 700px;
-    height: auto;
-    padding-top: 0.1%;
-    padding-bottom: 0.1%;
-    float: left;
-}
-figure.detaljer figcaption{
-    font-style: italic;
-}
-
 /*These content classes are used to structure photos and text next to one another on a page*/
 .content-container {
     display: flex;
@@ -348,4 +336,15 @@ figure.detaljer figcaption{
     width: 400px;
     line-height: 1.9;
     padding-top: 1%;
+}
+/*This is a general class for figure elements. It's used to make articles and the like*/
+figure.detaljer img{
+    max-width: 700px;
+    height: auto;
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
+    float: left;
+}
+figure.detaljer figcaption{
+    font-style: italic;
 }
