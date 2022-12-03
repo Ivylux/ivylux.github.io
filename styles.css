@@ -156,7 +156,7 @@ img.main {
     float: left;
     display: block;
     color: #f2f2f2;
-    text-align: center;
+    text-align: left;
     padding: 14px 30px;
     text-decoration: none;
     font-family: Bauhaus93;
@@ -188,6 +188,8 @@ img.main {
     transition: 0.4s;
 }
 .sidenav {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: 0;
     position: fixed;
